@@ -1,0 +1,21 @@
+# aeroscapes.yaml
+
+# Define the root path and the relative paths to your image folders
+path: ./aeroscapes  # Update this to the actual path on your Windows machine
+train: images/train         # Path to training images
+val: images/train           # Path to validation images
+
+# Define the 12 AeroScapes classes (Index 0 to 11)
+names:
+  0: background
+  1: person
+  2: bike
+  3: car
+  4: drone
+  5: boat
+  6: animal
+  7: obstacle
+  8: construction
+  9: vegetation
+  10: road
+  11: sky

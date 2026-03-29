@@ -1,0 +1,17 @@
+# Augmentation Config for UAV Imagery Segmentation
+# Specific to overhead imagery: 90° rotations, HSV shifts ±15 %, 
+# mosaic 4-image tiling, and random perspective 0–15 %
+
+# Augmentation Parameters
+degrees: 90.0
+hsv_h: 0.15
+hsv_s: 0.15
+hsv_v: 0.15
+mosaic: 1.0
+perspective: 0.15
+shear: 0.0
+scale: 0.5 # Default scaling
+flipud: 0.5 # Overhead images can be flipped vertically
+fliplr: 0.5 # and horizontally
+mixup: 0.0 # Mosaic is enough
+copy_paste: 0.0

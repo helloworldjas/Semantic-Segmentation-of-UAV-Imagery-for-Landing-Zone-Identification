@@ -51,7 +51,7 @@ For each fold, it generates:
 
 ### 3) Model Training Strategy
 
-Training uses Ultralytics segmentation models (currently configured as `yolo11n-seg.pt`) in a two-stage schedule:
+Training uses Ultralytics segmentation models (currently configured as `yolo26n-seg.pt`) in a two-stage schedule:
 
 - **Stage 1 (stabilization):**
   - Freeze first 10 layers
@@ -139,7 +139,9 @@ project/
 ├─ augmentation_config.yaml            # UAV-specific augmentation parameter reference
 ├─ landing_zones.yaml                  # Legacy YOLO dataset config (12-class mapping)
 ├─ zip_package.py                      # Deployment bundle creator (deployment_package.zip)
+├─ test_my_picture.py                  # Pipeline excute in CLI
 └─ deployment_package.zip              # Packaged deployment artifacts
+
 ```
 
 ---

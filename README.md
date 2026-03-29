@@ -135,14 +135,10 @@ project/
 ├─ generate_report.py                  # Report artifacts (CSV + figures) generation
 ├─ benchmark_trt.py                    # TensorRT export + latency benchmark helper
 ├─ inference_jetson.py                 # Runtime inference script for .pt/.engine models
-├─ test_my_picture.py                  # CLI single-image inference utility
-├─ app.py                              # Initial Gradio interface
 ├─ app_v2.py                           # Refined Gradio interface with legend/summary
 ├─ augmentation_config.yaml            # UAV-specific augmentation parameter reference
 ├─ landing_zones.yaml                  # Legacy YOLO dataset config (12-class mapping)
 ├─ zip_package.py                      # Deployment bundle creator (deployment_package.zip)
-├─ test2.jpg                           # Example custom test image
-├─ test2_result.jpg                    # Example inference output
 └─ deployment_package.zip              # Packaged deployment artifacts
 ```
 

@@ -11,7 +11,7 @@ DATASET_ROOT = r'd:\AAE4203\project\yolo_dataset'
 # To change to a newer model (e.g., YOLO11 or future "YOLO26"), just change the string below.
 # As of right now, YOLO11 is the newest official release from Ultralytics.
 # If you have a custom yolo26-seg.pt file, simply set BASE_MODEL = "yolo26-seg.pt"
-BASE_MODEL = "yolo11n-seg.pt" 
+BASE_MODEL = "yolo26n-seg.pt" 
 
 def train_fold(fold, config, trial=None):
     """Train on a specific fold with given hyperparameters."""

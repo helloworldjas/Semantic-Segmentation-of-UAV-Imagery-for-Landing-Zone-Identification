@@ -66,7 +66,7 @@ def train_fold(fold, config, trial=None):
         save=True,
         exist_ok=True,
         plots=True,
-        # Weighted loss: YOLOv8 doesn't have a direct class_weights param, 
+        # Weighted loss: YOLOv26 doesn't have a direct class_weights param, 
         # but we can use 'cls' gain to emphasize classification.
         # Alternatively, for segmentation, the 'box' and 'mask' losses are important.
         cls=1.5, # Increase classification gain to help minority class
@@ -78,7 +78,7 @@ def train_fold(fold, config, trial=None):
     # from the validation results.
     val_results = model.val(data=dataset_yaml)
     obstacle_iou = val_results.seg.map50 # Placeholder for obstacle IoU
-    # In YOLOv8, seg.map50 is mAP@50. True IoU can be extracted from results.
+    # In YOLOv26, seg.map50 is mAP@50. True IoU can be extracted from results.
     
     return obstacle_iou
 
